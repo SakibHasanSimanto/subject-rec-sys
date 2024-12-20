@@ -76,7 +76,7 @@ if st.button('Comparison'):
         fig.add_trace(go.Scatter(x=columns, y=science_means, mode='lines+markers', name='Science', line=dict(color='blue')))
         fig.add_trace(go.Scatter(x=columns, y=com_means, mode='lines+markers', name='Commerce', line=dict(color='green')))
         fig.add_trace(go.Scatter(x=columns, y=arts_means, mode='lines+markers', name='Arts', line=dict(color='red')))
-        fig.add_trace(go.Scatter(x=columns, y=input_list, mode='markers+lines', name='Your Score', line=dict(color='white', dash='dash')))
+        fig.add_trace(go.Scatter(x=columns, y=input_list, mode='markers+lines', name='Your Score', line=dict(color='yellow', dash='dash')))
 
         fig.update_layout(
             title="Subject Comparison with Mean Scores",
@@ -109,7 +109,7 @@ if st.button('Compare with Science'):
             x=columns, y=input_list, 
             mode='lines+markers', 
             name='Your Score',
-            line=dict(color='white', dash='dash')
+            line=dict(color='yellow', dash='dash')
         ))
 
 
@@ -142,7 +142,7 @@ if st.button('Compare with Arts'):
             x=columns, y=input_list, 
             mode='lines+markers', 
             name='Your Score',
-            line=dict(color='white', dash='dash')
+            line=dict(color='yellow', dash='dash')
         ))
 
       
@@ -176,7 +176,7 @@ if st.button('Compare with Commerce'):
             x=columns, y=input_list, 
             mode='lines+markers', 
             name='Your Score',
-            line=dict(color='white', dash='dash')
+            line=dict(color='yellow', dash='dash')
         ))
 
 
