@@ -73,9 +73,9 @@ if st.button('Comparison'):
 
         fig = go.Figure()
 
-        fig.add_trace(go.Scatter(x=columns, y=science_means, mode='lines+markers', name='Science', line=dict(color='blue')))
-        fig.add_trace(go.Scatter(x=columns, y=com_means, mode='lines+markers', name='Commerce', line=dict(color='green')))
-        fig.add_trace(go.Scatter(x=columns, y=arts_means, mode='lines+markers', name='Arts', line=dict(color='red')))
+        fig.add_trace(go.Scatter(x=columns, y=science_means, mode='lines+markers', name='Science', line=dict(color='blue',dash='dash')))
+        fig.add_trace(go.Scatter(x=columns, y=com_means, mode='lines+markers', name='Commerce', line=dict(color='green',dash='dash')))
+        fig.add_trace(go.Scatter(x=columns, y=arts_means, mode='lines+markers', name='Arts', line=dict(color='red',dash='dash')))
         fig.add_trace(go.Scatter(x=columns, y=input_list, mode='markers+lines', name='Your Score', line=dict(color='magenta')))
 
         fig.update_layout(
